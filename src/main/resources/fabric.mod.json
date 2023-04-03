@@ -4,10 +4,11 @@
   "version": "${version}",
 
   "name": "Ngrok LAN",
-  "description": "Exposes your local LAN server to the internet with Ngrok.",
+  "description": "A Fork of Ngrok LAN for 23w13a_or_b - Exposes your local LAN server to the internet with Ngrok.",
   "authors": [
     "Peter Zhang (alujjdnd)",
-    "Flooflez"
+    "Flooflez",
+    "DiamondDev (23w13a_or_b version implementation/port)"
   ],
   "contact": {
     "homepage": "https://github.com/Alujjdnd/Ngrok-LAN",
@@ -25,9 +26,6 @@
     ],
     "server": [
       "alujjdnd.ngrok.lan.NgrokServerInitialiser"
-    ],
-    "modmenu": [ 
-      "alujjdnd.ngrok.lan.config.ModMenuIntegration"
     ]
   },
 
@@ -35,10 +33,12 @@
     "ngroklan.mixins.json"
   ],
 
+  "accessWidener": "ngroklan.accesswidener",
+
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": ">=0.14.19",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.20-alpha.23.13.ab",
     "java": ">=17"
   },
   "suggests": {
